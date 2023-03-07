@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+<body>
+    <center>
+    <style>
+        *{font-style: normal; font-size: bold;}
+        body{
+        background-image: url('D:\th (11).jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        }
+        .heading{
+            font-size: xx-large;
+            padding-top: 2%;
+        }
+        .contact.icons-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+            gap: 1.5rem;
+        }
+        .contact.icons-container .icons{
+            text-align: center;
+            border: 0.1rem solid rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7) ;
+            padding: 2rem;
+        }
+        .contact.icons-container .icons i{
+            height: 6rem;
+            width: 6rem;
+            line-height: 2.5rem;
+            background: var(brown);
+            color: #fff;
+            border-radius: 50%;
+        }
+        .contact.icons-container .icons h3{
+            color:#fff;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+        .contact.icons-container .icons p{
+            color: #222;
+            font-size: 1rem;
+            padding: 2;
+        }
+        .contanct.row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contanct.row form{
+            padding: 2rem;
+            border: 0.1rem solid rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+            flex: 1 1 40rem;
+        }
+        .contanct.row form h3{
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+            color: #222;
+        }
+        .contanct.row form .inputBox{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contanct.row form .inputBox .box,
+        .contanct.row form textarea{
+            padding: 1rem 1.2rem;
+            font-size: 1.6rem;
+            border: 0.1rem solid rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+            color: #222;
+            text-transform: none;
+            margin: .7rem 0;
+        }
+        .contanct.row form textarea{
+            width: 100%;
+            height: 15rem;
+            resize: none;
+        }
+        .contanct.row.map{
+            flex: 1 1 40rem;
+            width: 100%;
+        }
+    </style>
+   <div class="heading" >
+    <h1>Contact Us</h1>
+   </div>
+   <div class="contact">
+    <div class="icon-container">
+        <div class="icons">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h3>OUR NUMBER</h3>
+        <p>+111-222-3333</p>
+        <p>+456-786-7890</p>
+    </div>
+    <div class="icons">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <h3>OUR EMAIL</h3>
+        <p>s.s.sukhadiya123@gmail.com</p>
+        <p>tithipatel456@gmail.com</p>
+    </div>
+    <div class="icons">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <h3>OUR ADDRESS</h3>
+        <p>r.c.technical, shayona city, ahmedabad, india</p>
+        </div>
+    </div>
+    <div class="row">
+        <form action="">
+            <h3>GET IN TOUCH</h3>
+            <div class="inputBox">
+            <input type="text" placeholder="enter your name" class="box">
+            <input type="text" placeholder="enter your email" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="enter your number" class="box">
+                <input type="text" placeholder="enter your subject" class="box">
+                </div>
+                <textarea placeholder="your message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+        </form>
+        
+    </div>
+   </div>
+    </center>
+</body>
+</html>
+
+
+
+
