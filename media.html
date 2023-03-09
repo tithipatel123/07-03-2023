@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.wrapper {overflow: auto;}
+
+#main {margin-right: 4px;}
+
+#rightsidebar {
+  float: none;
+  width: auto;
+}
+
+#itemlist{
+  margin: 0;
+  padding: 0;
+}
+
+.itemlist:hover {
+  background: #107ddc;
+  border: 1px solid #a17b7b;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 560px) {
+  #rightsidebar {width: 200px; float: right;}
+  #main {margin-right: 216px;}
+}
+body {
+  background-color: rgb(131, 187, 211);
+}
+
+@media screen and (min-width: 5600px) {
+  body {
+    background-color: rgb(31, 201, 240);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div id="rightsidebar">
+    <ul id="itemlist">
+      <li class="itemlist">item-list 1</li>
+      <li class="itemlist">item-list 2</li>
+      <li class="itemlist">item-list 3</li>
+      <li class="itemlist">item-list 4</li>
+      <li class="itemlist">item-list 5</li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>This example shows a item that will float to the right of the page if the viewport is 560 pixels wide or wider. If the viewport is less than 480 pixels, the item will be on top of the content.</p>
+  </div>
+</div>
+
+</body>
+</html>
