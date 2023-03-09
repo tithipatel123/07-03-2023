@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Admin Registration Form </title>
+    </head>
+    <style>
+        body  
+        {  
+            margin:auto;  
+            padding:auto;  
+            background-color:rosybrown;  
+            font-family: 'Arial';  
+        }  
+        .container
+        {
+            height: auto;
+            width: 400px;  
+            overflow: visible;  
+            margin: auto;  
+            padding: 85px;  
+            background: burlywood;  
+            border-radius: 25px ;  
+        }  
+        h1
+        {
+            text-align: center;  
+            color: #277582;  
+            padding: 15px;  
+        }  
+        label
+        {  
+            color: black;  
+            font-size: 17px;  
+        }  
+        #name,#email,#psw,#psw-repeat
+        {  
+            width: 400px;
+            height: 32px;
+            border: none;   
+            border-radius: 7px;  
+            padding-left: 4px;  
+        }
+        #regi,#rst,#hm
+        {
+            width: 120px;  
+            height: 30px;  
+            border: none;
+            border-radius: 17px;  
+            padding-left: 7px;  
+            color: blue;
+        }      
+    </style>
+    <body>
+        <h1 style="color: wheat"> Admin Register </h1>
+        <form class="regiform" method="post" action="admreg_b.jsp">
+            <div class="container">
+                <p><center> Please fill this Form for Admin </center></p>
+                <label for="name"><b> Name :</b></label><br><br>
+                <input type="text" placeholder="Enter your Name" name="name" id="name" required><br><br>
+                <label for="email"><b>Email ID:</b></label><br><br>
+                <input type="text" placeholder="Enter your Email Id" name="email" id="email" required><br><br>
+                <label for="psw"><b>Password :</b></label><br><br>
+                <input type="password" placeholder="Enter your Password" name="psw" id="psw" required><br><br>
+                <label for="psw-repeat"><b>Repeat Password :</b></label><br><br>
+                <input type="password" placeholder="Repeat your Password" name="psw-repeat" id="psw1" required><br/><br/>
+                <button type="submit" class="registerbtn" id="regi" >Register</button>
+                <button type="reset" class="reset" id="rst" > Reset </button>
+                <button type="button" id="hm"> 
+                <a href="main_page.jsp"> Home </a>
+                </button>
+            </div>
+        </form> 
+    </body>
+</html>
